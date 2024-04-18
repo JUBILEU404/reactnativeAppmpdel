@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
+
 const FP2 = () => {
     const [mensagem, setMensagem] = useState(null);
 
     const mostrarMensagem = (respostaCorreta) => {
         if (respostaCorreta) {
-            setMensagem("Resposta correta!");
+            setMensagem(alert("voce acertou a pegunta"), navigation.navigate("Pegunta3"));
         } else {
-            setMensagem("Resposta incorreta!");
+            setMensagem(alert("voce errou a pegunta"), navigation.navigate("Pegunta3"));
         }
     }
     navigation = useNavigation()
     return (
         <View style={styles.body}>
-            <Text>A primeira exibição de um filme de curta duração aconteceu em qual ano?</Text>
             
             <View>
                 <Image
@@ -24,7 +24,9 @@ const FP2 = () => {
                     }}
                 />
             </View>
-            
+            <br/>
+            <Text>A primeira exibição de um filme de curta duração aconteceu em qual ano?</Text>
+            <br/>
             <View style={styles.buttons}>
                 <Button
                     onPress={() => mostrarMensagem(false)}
@@ -56,9 +58,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    buttons: {
-        
-    },
+   
     tinyLogo: {
         width: 200,
         height: 200,

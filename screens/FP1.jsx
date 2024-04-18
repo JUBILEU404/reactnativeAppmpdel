@@ -1,22 +1,21 @@
 import React ,{ useState }from 'react'
 import { StyleSheet, Text, View, Image, Button} from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+
 const FP1 = () => {
     const [mensagem, setMensagem] = useState(null);
 
     const mostrarMensagem = (respostaCorreta) => {
         if (respostaCorreta) {
-            setMensagem("Resposta correta!");
+            setMensagem(alert("voce acertou a pegunta"), navigation.navigate("Pegunta2"));
         } else {
-            setMensagem("Resposta incorreta!");
+            setMensagem(alert("voce errou a pegunta"), navigation.navigate("Pegunta2"));
         }
     }
     navigation = useNavigation()
     return (
         <View style= {styles.body}>
-            <Text >A primeira ixibição de um filme de curta duração aconteu em qual pais é cidade?</Text>
-<br/>
-
+            
         <View>
             <Image
             style={styles.tinyLogo}
@@ -26,25 +25,30 @@ const FP1 = () => {
         </View>
 
 <br/>
-
+<Text style={styles.text} >A primeira ixibição de um filme de curta duração aconteu em qual pais é cidade?</Text>
+           <br />
             <View style= {styles.buttons}>
             <Button 
-            onPress={() => {mostrarMensagem(false);alert("voce errou a pegunta"); navigation.navigate("Pegunta2");}}
+            onPress={() => {mostrarMensagem(false)}}
             title="Bordéus"
             
+            
             /> 
-          <Button 
-        onPress={() => {
-        mostrarMensagem(true); alert("voce acertou a pegunta"); navigation.navigate("Pegunta2");}}
-        title="Paris"
-/>
             <Button 
-            onPress={() => {mostrarMensagem(false); alert("voce errou a pegunta"); navigation.navigate("Pegunta2");}}
+            onPress={() => {
+            mostrarMensagem(true)}}
+            title="Paris"
+            
+            />
+            <Button 
+            onPress={() => {mostrarMensagem(false)}}
             title="Estrasburgo"
+            
             /> 
             <Button 
-            onPress={() =>{mostrarMensagem(false);alert("voce errou a pegunta"); navigation.navigate("Pegunta2");}}
+            onPress={() =>{mostrarMensagem(false);}}
             title="marselha"
+            
             /> 
             
             </View>
@@ -60,11 +64,15 @@ const styles = StyleSheet.create({
         flex: 1, 
         justifyContent: 'center',
         alignItems:'center',
+        backgroundColor: 'black'
      },
-     buttons:{
-        display: 'flex',
-     },
+     
      tinyLogo: {
         width: 200,
-        height: 200,}
+        height: 200,},
+       
+ text: {
+    color: 'white'
+ }
+       
 })
