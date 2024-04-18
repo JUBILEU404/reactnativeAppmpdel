@@ -10,6 +10,7 @@ import FilmesScreen from './screens/FilmesScreen';
 import FP1 from './screens/FP1';
 import FP2 from './screens/FP2';
 import FP3 from './screens/FP3';
+import FP4 from './screens/FRP4';
 
 const Stack = createNativeStackNavigator()
 
@@ -25,6 +26,7 @@ export default function App() {
         <Stack.Screen name='Pegunta1' component={FP1} />
         <Stack.Screen name='Pegunta2' component={FP2} />
         <Stack.Screen name='Pegunta3' component={FP3} />
+        <Stack.Screen name='Pegunta4' component={FP4} />
       </Stack.Navigator>
     </NavigationContainer>
   );

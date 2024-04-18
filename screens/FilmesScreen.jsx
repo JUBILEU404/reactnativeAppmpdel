@@ -21,6 +21,10 @@ const FilmesScreen = ({navigation}) => {
                 title='Pegunta 3'
                 onPress={() => {navigation.navigate("Pegunta3")}}
                 />
+                <Button
+                title='Pegunta 4'
+                onPress={() => {navigation.navigate("Pegunta4")}}
+                />
               
             </View>
         </View>
