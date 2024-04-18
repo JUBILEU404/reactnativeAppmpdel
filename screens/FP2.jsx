@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image, Button } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native'
 const FP2 = () => {
     const [mensagem, setMensagem] = useState(null);
 
@@ -11,6 +11,7 @@ const FP2 = () => {
             setMensagem("Resposta incorreta!");
         }
     }
+    navigation = useNavigation()
     return (
         <View style={styles.body}>
             <Text>A primeira exibição de um filme de curta duração aconteceu em qual ano?</Text>

@@ -1,6 +1,6 @@
 import React ,{ useState }from 'react'
 import { StyleSheet, Text, View, Image, Button} from 'react-native'
-
+import { useNavigation } from '@react-navigation/native'
 const FP1 = () => {
     const [mensagem, setMensagem] = useState(null);
 
@@ -11,6 +11,7 @@ const FP1 = () => {
             setMensagem("Resposta incorreta!");
         }
     }
+    navigation = useNavigation()
     return (
         <View style= {styles.body}>
             <Text >A primeira ixibição de um filme de curta duração aconteu em qual pais é cidade?</Text>
@@ -28,19 +29,21 @@ const FP1 = () => {
 
             <View style= {styles.buttons}>
             <Button 
-            onPress={() => mostrarMensagem(false)}
+            onPress={() => {mostrarMensagem(false);alert("voce errou a pegunta"); navigation.navigate("Pegunta2");}}
             title="Bordéus"
+            
             /> 
+          <Button 
+        onPress={() => {
+        mostrarMensagem(true); alert("voce acertou a pegunta"); navigation.navigate("Pegunta2");}}
+        title="Paris"
+/>
             <Button 
-             onPress={() => mostrarMensagem(true)}
-            title=" Paris"
-            />
-            <Button 
-            onPress={() => mostrarMensagem(false)}
+            onPress={() => {mostrarMensagem(false); alert("voce errou a pegunta"); navigation.navigate("Pegunta2");}}
             title="Estrasburgo"
             /> 
             <Button 
-            onPress={() => mostrarMensagem(false)}
+            onPress={() =>{mostrarMensagem(false);alert("voce errou a pegunta"); navigation.navigate("Pegunta2");}}
             title="marselha"
             /> 
             

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image, Button } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native'
 const FP3 = () => {
     const [mensagem, setMensagem] = useState(null);
 
@@ -11,7 +11,7 @@ const FP3 = () => {
             setMensagem("Resposta incorreta!");
         }
     }
-
+    navigation = useNavigation()
     return (
         <View style={styles.body}>
             <Text>A primeira premiação do Oscar ocorreu em qual ano?</Text>
