@@ -6,11 +6,17 @@ import ModelScreen from './screens/ModelScreen';
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import GeneralQuizScreen from './screens/GeneralQuizScreen';
-import FilmesScreen from './screens/FilmesScreen';
-import FP1 from './screens/FP1';
-import FP2 from './screens/FP2';
-import FP3 from './screens/FP3';
-import FP4 from './screens/FRP4';
+import FilmesScreen from './screens/QuizFilme/FilmesScreen';
+import FFP1 from './screens/QuizFilme/FFP1';
+import FFP2 from './screens/QuizFilme/FFP2';
+import FFP3 from './screens/QuizFilme/FFP3';
+import FFP4 from './screens/QuizFilme/FFP4';
+import FFP5 from './screens/QuizFilme/FFP5';
+import DFP1 from './screens/QuizFilme/DFP1';
+import DFP2 from './screens/QuizFilme/DFP2';
+import DFP3 from './screens/QuizFilme/DFP3';
+import DFP4 from './screens/QuizFilme/DFP4';
+import DFP5 from './screens/QuizFilme/DFP5';
 
 const Stack = createNativeStackNavigator()
 
@@ -23,10 +29,19 @@ export default function App() {
         <Stack.Screen name='Sobre' component={AboutScreen} />
         <Stack.Screen name='GeneralQuiz' component={GeneralQuizScreen} />
         <Stack.Screen name='Filmes' component={FilmesScreen} />
-        <Stack.Screen name='Pegunta1' component={FP1} />
-        <Stack.Screen name='Pegunta2' component={FP2} />
-        <Stack.Screen name='Pegunta3' component={FP3} />
-        <Stack.Screen name='Pegunta4' component={FP4} />
+        <Stack.Screen name='Facil Pegunta 1' component={FFP1} />
+        <Stack.Screen name='Facil Pegunta 2' component={FFP2} />
+        <Stack.Screen name='Facil Pegunta 3' component={FFP3} />
+        <Stack.Screen name='Facil Pegunta 4' component={FFP4} />
+        <Stack.Screen name='Facil Pegunta 5' component={FFP5} />
+        <Stack.Screen name='Dificil Pegunta 1' component={DFP1} />
+        <Stack.Screen name='Dificil Pegunta 2' component={DFP2} />
+        <Stack.Screen name='Dificil Pegunta 3' component={DFP3} />
+        <Stack.Screen name='Dificil Pegunta 4' component={DFP4} />
+        <Stack.Screen name='Dificil Pegunta 5' component={DFP5} />
+        
+        
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
