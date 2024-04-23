@@ -31,7 +31,7 @@ const FFP4 = () => {
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title="Tom Cruise"
-            
+            color="#ff0000"
             
             
             /> 
@@ -39,17 +39,19 @@ const FFP4 = () => {
             onPress={() => {
             mostrarMensagem(true)}}
             title=" Leonardo DiCaprio"
-            
+            color="#ff0000"
+
             />
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title=" Brad Pitt"
-            
+            color="#ff0000"
+
             /> 
             <Button 
             onPress={() =>{mostrarMensagem(false);}}
             title="Johnny Depp"
-            
+            color="#ff0000"
             /> 
             
             </View>

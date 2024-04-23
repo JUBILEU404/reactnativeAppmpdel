@@ -31,24 +31,24 @@ const DFP1 = () => {
             <Button 
             onPress={() => {mostrarMensagem(true)}}
             title="O Resgate do Soldado Ryan"
-            
+            color="#ff0000"
             
             /> 
             <Button 
             onPress={() => {
             mostrarMensagem(false)}}
             title="O Grande Escape"
-            
+            color="#ff0000"
             />
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title=" Ponte do Rio Kwai"
-            
+            color="#ff0000"
             /> 
             <Button 
             onPress={() =>{mostrarMensagem(false);}}
             title="Chris Hemsworth"
-            
+            color="#ff0000"
             /> 
             
             </View>

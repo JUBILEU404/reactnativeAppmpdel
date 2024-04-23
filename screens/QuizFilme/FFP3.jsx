@@ -31,24 +31,24 @@ const FFP3 = () => {
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title=" Up - Altas Aventuras"
-            
+            color="#ff0000"
             
             /> 
             <Button 
             onPress={() => {
             mostrarMensagem(false)}}
             title="Procurando Nemo"
-            
+            color="#ff0000"
             />
             <Button 
             onPress={() => {mostrarMensagem(true)}}
             title="Ratatouille"
-            
+            color="#ff0000"
             /> 
             <Button 
             onPress={() =>{mostrarMensagem(false);}}
             title="Os Incríveis"
-            
+            color="#ff0000"
             /> 
             
             </View>

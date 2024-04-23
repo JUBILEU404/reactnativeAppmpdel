@@ -31,24 +31,24 @@ const DFP5 = () => {
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title="Vingadores: Era de Ultron (2015)"
-            
+            color="#ff0000"
             
             /> 
             <Button 
             onPress={() => {
             mostrarMensagem(true)}}
             title="Os Vingadores (2012)"
-            
+            color="#ff0000"
             />
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title="Vingadores: Guerra Infinita (2018)."
-            
+            color="#ff0000"
             /> 
             <Button 
             onPress={() =>{mostrarMensagem(false);}}
             title=" Vingadores: Ultimato (2019"
-            
+            color="#ff0000"
             /> 
             
             </View>

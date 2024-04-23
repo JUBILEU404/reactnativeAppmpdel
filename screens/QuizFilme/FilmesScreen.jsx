@@ -12,10 +12,12 @@ const FilmesScreen = ({navigation}) => {
             <Button
                 title='Facil'
                 onPress={() => {navigation.navigate("Facil Pegunta 1")}}
+                color="#000000"
                 />
                 <Button
                 title='Dificil'
                 onPress={() => {navigation.navigate("Dificil Pegunta 1")}}
+                color="#000000"
                 />
                
               
@@ -33,7 +35,8 @@ const styles = StyleSheet.create({
         alignItens: 'center'
     },
     text: {
-        fontSize: '1.5em',
+        fontSize: 24,
         textAlign: 'center'
-    }
+    },
+   
 })

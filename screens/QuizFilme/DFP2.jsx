@@ -30,25 +30,25 @@ const DFP2 = () => {
             <View style= {styles.buttons}>
             <Button 
             onPress={() => {mostrarMensagem(false)}}
-            title=") Saruman"
-            
+            title=" Saruman"
+            color="#ff0000"
             
             /> 
             <Button 
             onPress={() => {
             mostrarMensagem(false)}}
             title=" Gollum"
-            
+            color="#ff0000"
             />
             <Button 
             onPress={() => {mostrarMensagem(true)}}
             title=" Sauron  "
-            
+            color="#ff0000" 
             /> 
             <Button 
             onPress={() =>{mostrarMensagem(false);}}
             title="Morgoth"
-            
+            color="#ff0000"
             /> 
             
             </View>

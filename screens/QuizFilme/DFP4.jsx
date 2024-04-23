@@ -31,24 +31,24 @@ const DFP4 = () => {
             <Button 
             onPress={() => {mostrarMensagem(true)}}
             title="Christian Bale"
-            
+            color="#ff0000"
             
             /> 
             <Button 
             onPress={() => {
             mostrarMensagem(false)}}
             title="Ben Affleck"
-            
+            color="#ff0000"
             />
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title="Michael Keaton"
-            
+            color="#ff0000"
             /> 
             <Button 
             onPress={() =>{mostrarMensagem(false);}}
             title=" George Clooney"
-            
+            color="#ff0000"
             /> 
             
             </View>

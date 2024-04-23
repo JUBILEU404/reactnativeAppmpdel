@@ -31,25 +31,25 @@ const FFP5 = () => {
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title="BB-8"
-            
+            color="#ff0000"
             
             /> 
             <Button 
             onPress={() => {
             mostrarMensagem(true)}}
             title="WALL-E"
-            
+            color="#ff0000"
             
             />
             <Button 
             onPress={() => {mostrarMensagem(false)}}
             title="R2-D2"
-            
+            color="#ff0000"
             /> 
             <Button 
             onPress={() =>{mostrarMensagem(false);}}
             title="EVE"
-            
+            color="#ff0000"
             /> 
             
             </View>
